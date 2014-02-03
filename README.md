@@ -1,4 +1,4 @@
-raspberry_isp
+Raspberry Pi Arduino ISP installer
 =============
 
-raspberry_isp
+You could find the blog articles linked to these codes at http://hardware-libre.org
