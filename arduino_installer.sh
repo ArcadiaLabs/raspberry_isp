@@ -40,7 +40,7 @@ echo "OK"
 
 echo -n "  Arduino auto-reset hack: "
 if [ ! -f /usr/bin/avrdude-autoreset ]; then
-  wget https://github.com/SpellFoundry/avrdude-rpi/archive/master.zip
+  wget https://github.com/CaptainStouf/avrdude-rpi/archive/master.zip
   sudo unzip master.zip
   cd /tmp/avrdude-rpi-master/
   cp autoreset /usr/bin
