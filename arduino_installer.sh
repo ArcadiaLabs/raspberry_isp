@@ -53,12 +53,12 @@ fi
 echo "OK"
 
 cd /usr/share/arduino/hardware/arduino
-echo "Fetching files:"
+echo "Fetching/replacing files:"
 for file in boards.txt programmers.txt ; do
   echo "  $file"
-  #rm -f $file
-  #wget -q https://bitbucket.org/hardwarelibre/raspberry-pi/downloads/$file
-  doBackup /usr/share/arduino/hardware/arduino $file
+  #doBackup /usr/share/arduino/hardware/arduino $file
+  mv /usr/share/arduino/hardware/arduino/$file /usr/share/arduino/hardware/arduino/$file.bak
+  mv /tmp/raspberry_isp/$file /usr/share/arduino/hardware/arduino
 done
 
 echo "Replacing/updating files:"
