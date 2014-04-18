@@ -95,8 +95,8 @@ if [ ! -f /etc/udev/rules.d/99-tty.rules ]; then
 fi
 echo "OK"
 
-doBackup /usr/share/arduino/hardware/arduino boards.txt
-doBackup /usr/share/arduino/hardware/arduino programmers.txt
+#doBackup /usr/share/arduino/hardware/arduino boards.txt
+#doBackup /usr/share/arduino/hardware/arduino programmers.txt
 
 echo "All Done."
 echo "Check and reboot now to apply changes."
