@@ -9,7 +9,7 @@ doBackup() {
     echo "Backup of $2 exists, not overwriting"
   else
     mv $2 $2.bak
-    mv /tmp/raspberry-pi/arduino_installer/$2 .
+    mv /tmp/raspberry_isp/$2 .
     echo "OK"
   fi
 }
